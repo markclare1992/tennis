@@ -1,0 +1,13 @@
+Player names are unique.
+
+For the match results:
+
+ace = absolute number of aces
+df = number of double faults
+svpt = total serve points
+firstin = 1st serve in
+firstwon = points won on 1st serve
+secondwon = points won on 2nd serve
+svgms = serve games
+bpsaved = break point saved
+bpfaced = break point faced
