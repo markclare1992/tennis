@@ -1,0 +1,8 @@
+# Things to exclude from Version Control
+## environmental variables
+.env
+.env_*
+.env.*
+
+## logs
+*.log
