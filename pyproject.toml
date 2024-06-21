@@ -20,6 +20,8 @@ python-levenshtein = "^0.25.1"
 ruff = "^0.4.9"
 pre-commit = "^3.7.1"
 rapidfuzz = "^3.9.3"
+mypy = "^1.10.0"
+pytest = "^8.2.2"
 
 
 [build-system]

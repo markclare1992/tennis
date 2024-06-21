@@ -45,7 +45,7 @@ class TournamentRound(Enum):
 class MatchInfo(BaseModel):
     match_id: int
     tourney_id: int
-    tourney_name: constr(to_lower=True)
+    tourney_name: constr(to_lower=True)  # type: ignore
     tourney_date: datetime
     tourney_level: TournamentLevel
     surface: TournamentSurface
@@ -67,13 +67,11 @@ class MatchInfoList(BaseModel):
     data: list[MatchInfo]
 
 
-
-
 # Load the data
 df = pd.read_csv("./data/match_info.csv")
 
 # Check for duplicate match_id
-duplicates = df[df.duplicated(['match_id'])]
+duplicates = df[df.duplicated(["match_id"])]
 if not duplicates.empty:
     print(f"Duplicates found: {duplicates}")
 
@@ -86,8 +84,8 @@ match_info_list = MatchInfoList(data=match_list)
 for index, row in df.iterrows():
     for other_index, other_row in df.iterrows():
         if (
-                index != other_index
-                and fuzz.ratio(row["tourney_name"], other_row["tourney_name"]) > 80
+            index != other_index
+            and fuzz.ratio(row["tourney_name"], other_row["tourney_name"]) > 80
         ):
             print(f"Row {index} and Row {other_index} have similar tournament names")
 

@@ -136,6 +136,7 @@ Analytical, Simulation, Machine Learning.
   - Ensure the project follows best practices.
   - Ensure the project is well-documented.
   - Ensure the project is well-tested. (NOT MENTIONED ABOVE)
+    - Use Pytest to write tests for the project.
   - Ensure code is clean, has good variable names, docstrings, etc.
   - Use version control to track changes to the project, eg. Git.
   - Use packages like Ruff to ensure the quality of the code.
