@@ -17,6 +17,7 @@ Below outlines the workflow for the project.
   - Discard erroneous data.
   - Check IDs are unique.
   - Check for string similarity, i.e. can we match the same player/tournament with different names?
+  - Outlier analysis. ?
 - Note any additional data that may be needed, or "ideal" requirements of the data.
   - Identify possible external data sources that may be useful.
 - Add a data validation framework to ensure data integrity.
@@ -26,6 +27,7 @@ Below outlines the workflow for the project.
 #### Extensions
 - Create a formal data engineering pipeline to clean the data.
   - Use orchestration tools like Apache Airflow to schedule the pipeline.
+- Save in a database or data warehouse.
 - Schedule the pipeline to run at regular intervals.
 - Process only new data, or data that has changed since the last run.
 - Add suitable logging to the pipeline to track the data processing.
@@ -66,6 +68,7 @@ Below outlines the workflow for the project.
 ### Modelling
 Analytical, Simulation, Machine Learning.
 
+
 ### Evaluation
 
 - Evaluate vs observed outcomes, what are we trying to minimize?
@@ -85,7 +88,20 @@ Analytical, Simulation, Machine Learning.
 - Improve underlying data.
   - StatsPerform
   - SportRadar
+- Feature Engineering
+  - Match Number in tournament possibly useful for fatigue?
+  - Indoor/Outdoor Court, Court with Roof, etc.
+  - Weather Conditions, i.e., Wind, Humidity, Temperature, etc.
+  - Crowd size.
+  - Tournament prize money, round prize money, etc.
+  - Player Age/Weight/Height, etc.
+  - Ball information, rules on new balls, etc.
+  - Would be useful to know who won what game, i.e. service games won.
+  - Head 2 Head data for stylistic match-ups.
 - Consider combining market based models with fundamental models.
+- EDA based on surface impact to stats i.e. ace percentage on grass vs hard court.
+- Fatigue, how long since last match, how many matches played in last week, etc. How long did the last match go for?
+- Travel, how far has the player travelled, how long did it take, etc. Time zone changes. Jet lag.
 
 ## Production
 
