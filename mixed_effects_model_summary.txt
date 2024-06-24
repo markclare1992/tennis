@@ -1,0 +1,16 @@
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:            MixedLM Dependent Variable: player_total_serve_win_pct
+No. Observations: 75806   Method:             REML                      
+No. Groups:       1189    Scale:              0.0074                    
+Min. group size:  1       Log-Likelihood:     69859.1976                
+Max. group size:  984     Converged:          No                        
+Mean group size:  63.8                                                  
+-------------------------------------------------------------------------
+                         Coef.   Std.Err.     z     P>|z|  [0.025  0.975]
+-------------------------------------------------------------------------
+Intercept                 0.597     0.001  428.628  0.000   0.594   0.600
+Group Var                 0.001     0.000                                
+Group x opponent_id Cov  -0.000     0.002                                
+opponent_id Var           0.008                                          
+========================================================================
