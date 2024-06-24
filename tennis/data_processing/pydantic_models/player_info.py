@@ -1,15 +1,17 @@
-
 """Pydantic models for the player info data."""
-from datetime import datetime
+
 from enum import Enum
 
 import pandas as pd
 from pydantic import BaseModel, constr, field_validator, PositiveInt
 
+
 class PlayerHand(Enum):
     """Enum for the hand of the player."""
+
     LEFT = "L"
     RIGHT = "R"
+
 
 # match_id,winner_name,loser_name,winner_age,loser_age,winner_rank,loser_rank,winner_rank_points,loser_rank_points,winner_seed,loser_seed,winner_ioc,loser_ioc,winner_hand,loser_hand
 # 0,Antony Dupuis,Andrew Ilie,27.1813826146,24.0355920602,113,50,351.0,762.0,,1,FRA,AUS,R,R

@@ -1,9 +1,10 @@
 """Pydantic models for the match info data."""
+
 from datetime import datetime
 from enum import Enum
 
-import pandas as pd
 from pydantic import BaseModel, constr, field_validator, PositiveInt
+
 
 class TournamentSurface(Enum):
     """Enum for the surface of the tournament."""
